@@ -1,18 +1,16 @@
 #include "melee.h"
-
+//Constructors
 melee::melee(){
     this->sharpness = 0.0;
     this->strikeRange = 0.0;
-    melee::weapon();  
 
 }
 melee::melee(float nSharpness , float nRange , float damage , string name , string tier , float nDurability){
     this->sharpness = nSharpness; 
     this->strikeRange = nRange;
     this->durability = nDurability;
-    melee::weapon(name , damage , this->type , tier);
 }
-
+//Accessors 
 float melee::getSharpness(){
     return this->sharpness;
 }
@@ -22,7 +20,7 @@ float melee::getStrikeRange(){
 float melee::getDurability(){
     return this->durability;
 }
-
+//Mutators
 void melee::setSharpness(float nSharpness){
     this->sharpness = nSharpness; 
 }
@@ -34,16 +32,18 @@ void melee::setDurability(float nDura){
     this->durability = nDura;
 }
 
+//To string 
+
 string melee::toString(){
     return "Sharpness  : " + to_string(this->sharpness) + "\n" \
      + "Strike Range : " + to_string(this->strikeRange) + "\n" \
     "Durability : " + to_string(this->durability);
 }
 
-void melee::decreaseDurability(int weaponDamage) {
-    cout << "Decreasing durability";
-    this->durability -= weaponDamage; 
-}
+//void melee::decreaseDurability(int weaponDamage) {
+//    cout << "Decreasing durability";
+//    this->durability -= weaponDamage; 
+//}
 
 
 // melee::~melee(){

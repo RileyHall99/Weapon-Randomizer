@@ -7,7 +7,7 @@ class melee : public weapon{
         float sharpness; 
         float strikeRange; 
         float durability; 
-        string type = "melee";
+
     public:
         melee(); 
         melee(float nSharpness , float nStrikeRange , float damage , string name  , string tier , float nDurability); 
@@ -20,9 +20,9 @@ class melee : public weapon{
         void setStrikeRange(float nRange);
         void setDurability(float nDurability);
         string toString();
-        void decreaseDurability(int weaponDamge);
-        void assignStats(); 
-        // ~melee();
+        //void decreaseDurability(int weaponDamge);
+        //void assignStats(); 
+        //~melee();
 
 };
 

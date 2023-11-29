@@ -11,6 +11,7 @@ class weapon{
         string type;
         string name; 
         string tier; 
+        float attkRng;
     public:
         //constructors 
         weapon(); 
@@ -20,15 +21,16 @@ class weapon{
         void setName(string nName); 
         void setType(string nType);
         void setTier(string nTier); 
+  
         //accessors  
         float getDamage();
         string getName(); 
         string getType(); 
         string getTier();
-
-        //virtual float attackRange(); //This is for selecting the weapons type, range melee, magic etc......Defined in a more specific instance 
-        virtual void decreaseDurability(); //Used to decrease durability 
-        virtual void calculateDamage(); //used to calculate damage done to a object of sword
+        //Pure virtual functions 
+        virtual float calculateAttackRange(float , float)=0; //This is for selecting the weapons type, range melee, magic etc......Defined in a more specific instance 
+        virtual float decreaseDurability(float weaponDamage , int)=0; //Used to decrease durability 
+        virtual float calculateDamage(float , float , float)=0; //used to calculate damage done to a object of sword
         string toString();
 
         // ~weapon();

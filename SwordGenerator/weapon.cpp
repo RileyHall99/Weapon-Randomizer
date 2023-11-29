@@ -12,6 +12,7 @@ weapon::weapon(string nName , float nDamage , string nType , string nTier){
     this->damage = nDamage; 
     this->type = nType;  
 }
+//mutators
 void weapon::setTier(string nTier){
     this->tier = nTier; 
 }
@@ -25,6 +26,7 @@ void weapon::setType(string nType){
     this->type = nType; 
 }
 
+//Accessors
 string weapon::getName(){
     return this->name;
 }
@@ -39,12 +41,8 @@ string weapon::getType(){
 float weapon::getDamage(){
     return this->damage;
 }
-void weapon::decreaseDurability() {}
-void weapon::calculateDamage(){}
 
-//float weapon::attackRange(){}
-//void weapon::calculateDamaged(){}
-//void weapon::decreaseDurability(){}
+//to String 
 string weapon::toString(){
     return "Damage : " + to_string(this->damage) + "\n"\
     "Name : " + this->name + "\n"\

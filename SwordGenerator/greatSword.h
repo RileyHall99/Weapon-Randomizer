@@ -1,5 +1,5 @@
 #pragma once 
-
+//The last instance of the hierarchy tree.... This is the specific instance of the tree
 #include "melee.h"
 class greatSword : public melee {
     private:
@@ -16,13 +16,15 @@ class greatSword : public melee {
         void setEdges(int nEdges); 
         void setAttr(string attr);
 
-        int getEdges(); 
+        //int getEdges(); 
         float getWeight();
         float getLength(); 
         string getAttr();
 
-        float attackRange(float stepSize);
-        void calculateDamage(float strength);
+        //This is for selecting the weapons type, range melee, magic etc......Defined in a more specific instance 
+        float  calculateAttackRange(float stepSize , float)override;
+        float decreaseDurability(float wd , int )override;
+        float calculateDamage(float strength , float , float weight)override;
         string toString();
 
         

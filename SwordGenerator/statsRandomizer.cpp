@@ -1,12 +1,15 @@
+//This is the stats class , it exists outside of the inheritance of the weapons class. 
+//The goal of this class is to create the stats (ex. Sharpness etc) and attributes/special abilities of the class. 
+//To get started Simply create a constructor that takes in your class as an argument
+//All stats for this class are assinged based off of rank.
 #include "stats.h"
 	RandomStats::RandomStats(){
 	
 	}
+	//Constructor for the great sword class.../melee class 
 	RandomStats::RandomStats(greatSword &s1) {
 		this->currentTier = setTier();
-		cout << "Currently given great sword object";
 		s1.setSharpness(assignSharpness());
-		//s1.setEdges(this->assignEdges()); 
 		s1.setWeight(assignWeight());
 		s1.setName(assignName());
 		s1.setTier(this->currentTier);
@@ -15,6 +18,7 @@
 		s1.setDurability(assignDurability());
 		s1.setAttr(getAttributes());
 	}
+	//Assigning the sharpness value to the class 
 	int RandomStats::assignSharpness() {
 		int min, max, output;
 		if (this->currentTier == "low") {
@@ -36,16 +40,16 @@
 			return output;
 		}
 	}
-
+	//Assigning how many edges the sword may have
 	int RandomStats::assignEdges(){
 
-		int min = 0; 
+		int min = 1; 
 		int max = 3; 
 		int output = min + (rand() % static_cast<int>(max - min + 1));
 
 		return output; 
 	}
-
+	//Assiging the length of the sword
 	int RandomStats::assignLength() {
 		int max, min, output; 
 
@@ -68,14 +72,13 @@
 			return output; 
 		}
 	}
-
+	//Assinging the weight of the sword
 	int RandomStats::assignWeight() {
 		int max, min, output; 
 		if (this->currentTier == "Low") {
 			min = 100; 
 			max = 110; 
 			return output = min + (rand() % static_cast<int>(max - min + 1));
-			
 		}
 		else if (this->currentTier == "Medium") {
 			min = 110; 
@@ -88,6 +91,7 @@
 			return output = min + (rand() % static_cast<int>(max - min + 1));
 		}
 	}
+	//Getting name of the class. 
 	string RandomStats::assignName() {
 		int output  , max; 
 		int min = 0; 
@@ -113,7 +117,7 @@
 			return this->hNames[output]; 
 		}
 	}
-
+	//Getting the tier of this class 
 	string RandomStats::setTier() {
 		int min = 0; 
 		int max = 3-1; 
@@ -124,7 +128,7 @@
 		return this->tiers[output];
 
 	}
-
+	//Assining the durability of the class
 	int RandomStats::assignDurability() {
 		int max, min, output;
 		if (this->currentTier == "Low") {
@@ -144,7 +148,7 @@
 			return output = min + (rand() % static_cast<int>(max - min + 1));
 		}
 	}
-
+	//Getting the attributes of the class
 	string RandomStats::getAttributes() {
 		int min, max, output;
 		min = 0; 
