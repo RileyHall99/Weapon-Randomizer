@@ -1,0 +1,32 @@
+{
+    "Low" : {
+        "sharpness" : [10,11,12,13,14,15],
+        "Durability" : [100,101,102,103,104], 
+        "edges" : [0,1,2], 
+        "weight" : [100 , 105 , 110], 
+        "length" : [50 , 60 , 70 , 80 , 90], 
+        "name" : ["Tree Branch" , "Mop Handle" , "Plunger" , "Stick"], 
+        "special_arrt" : ["Slight Gust of Wind" , "Gentle Breeze" , "" , "" ,""]
+        
+
+    },
+    "Medium" : { 
+        "sharpness" : [16,17,18,19,20,21],
+        "Durability" : [105,106,107,108,109], 
+        "edges" : [0,1,2], 
+        "weight" : [110 , 120 , 130], 
+        "length" : [100 , 105 , 110 , 115 , 120], 
+        "name" : ["Knight's Sword" , "GreatSword" , "Dagger" , "Katana"], 
+        "special_arrt" : ["Fire Aspect" , "Ice Aspect" , "Boomerang" , "" , ""]
+
+    }, 
+    "High" : {
+        "sharpness" : [30,50,70,90,110,130],
+        "Durability" : [200,210,220,230,240], 
+        "edges" : [0,1,2], 
+        "weight" : [140 , 150 , 160], 
+        "length" : [115 , 120 , 125 , 135 , 140], 
+        "name" : ["Excalibur" , "The King Slayer" , "The Last Stand" , "One Sword To Rule Them All" , "Sword Of The Chosen One"], 
+        "special_arrt" : ["One Hit One Kill" , "Zeus" , "Light Speed" , "Collatoral Damage" , "Good Luck"]
+    }
+}
