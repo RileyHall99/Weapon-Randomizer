@@ -1,30 +1,35 @@
+// Melee.cpp
 #include "melee.h"
 
-melee::melee(){
+// Default constructor
+melee::melee() :
+    weapon()
+{
     this->sharpness = 0.0;
     this->strikeRange = 0.0;
-    melee::weapon();  
-
 }
-melee::melee(float nSharpness , float nRange , float damage , string name , string tier , float nDurability){
-    this->sharpness = nSharpness; 
+
+// Parameterized constructor
+melee::melee(float nSharpness , float nRange , float damage , string name , string tier , float nDurability) :
+    weapon(name , damage , this->type , tier)
+{
+    this->sharpness = nSharpness;
     this->strikeRange = nRange;
     this->durability = nDurability;
-    melee::weapon(name , damage , this->type , tier);
 }
 
 float melee::getSharpness(){
     return this->sharpness;
 }
 float melee::getStrikeRange(){
-    return this->strikeRange; 
+    return this->strikeRange;
 }
 float melee::getDurability(){
     return this->durability;
 }
 
 void melee::setSharpness(float nSharpness){
-    this->sharpness = nSharpness; 
+    this->sharpness = nSharpness;
 }
 void melee::setStrikeRange(float nRange){
     this->strikeRange = nRange;
@@ -42,10 +47,9 @@ string melee::toString(){
 
 void melee::decreaseDurability(int weaponDamage) {
     cout << "Decreasing durability";
-    this->durability -= weaponDamage; 
+    this->durability -= weaponDamage;
 }
 
-
-// melee::~melee(){
-//     cout << "Melee Destroyed";
-// }
+melee::~melee(){
+    cout << "Melee Destroyed";
+}

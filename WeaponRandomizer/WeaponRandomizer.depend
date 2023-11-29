@@ -1,0 +1,83 @@
+# depslib dependency file v1.0
+1701287342 source:c:\users\kobef\documents\github\weapon-randomizer\swordgenerator\greatsword.cpp
+	"greatSword.h"
+
+1701287342 c:\users\kobef\documents\github\weapon-randomizer\swordgenerator\greatsword.h
+	"melee.h"
+
+1701290412 c:\users\kobef\documents\github\weapon-randomizer\swordgenerator\melee.h
+	"weapon.h"
+
+1701289992 c:\users\kobef\documents\github\weapon-randomizer\swordgenerator\weapon.h
+	<string>
+	<iostream>
+
+1701290354 source:c:\users\kobef\documents\github\weapon-randomizer\swordgenerator\melee.cpp
+	"melee.h"
+
+1701289037 source:c:\users\kobef\documents\github\weapon-randomizer\swordgenerator\statsrandomizer.cpp
+	"stats.h"
+
+1701288991 c:\users\kobef\documents\github\weapon-randomizer\swordgenerator\stats.h
+	<string>
+	<iostream>
+	<map>
+	<vector>
+	<random>
+	"greatSword.h"
+
+1701287342 source:c:\users\kobef\documents\github\weapon-randomizer\swordgenerator\swordgeneratordriver.cpp
+	<iostream>
+	"greatSword.h"
+	"stats.h"
+
+1701288938 source:c:\users\kobef\documents\github\weapon-randomizer\swordgenerator\weapon.cpp
+	"weapon.h"
+
+1701287342 source:c:\users\kobef\documents\github\weapon-randomizer\swordgenerator\stats.cpp
+	"stats.h"
+
+1701289736 source:c:\users\kobef\documents\github\weapon-randomizer\ranged.cpp
+	"ranged.h"
+
+1701290354 c:\users\kobef\documents\github\weapon-randomizer\ranged.h
+	<weapon.h>
+
+1701287342 source:c:\users\kobef\documents\github\weapon-randomizer\greatsword.cpp
+	"greatSword.h"
+
+1701287342 c:\users\kobef\documents\github\weapon-randomizer\greatsword.h
+	"melee.h"
+
+1701290412 c:\users\kobef\documents\github\weapon-randomizer\melee.h
+	"weapon.h"
+
+1701289992 c:\users\kobef\documents\github\weapon-randomizer\weapon.h
+	<string>
+	<iostream>
+
+1701287342 source:c:\users\kobef\documents\github\weapon-randomizer\stats.cpp
+	"stats.h"
+
+1701288991 c:\users\kobef\documents\github\weapon-randomizer\stats.h
+	<string>
+	<iostream>
+	<map>
+	<vector>
+	<random>
+	"greatSword.h"
+
+1701289037 source:c:\users\kobef\documents\github\weapon-randomizer\statsrandomizer.cpp
+	"stats.h"
+
+1701287342 source:c:\users\kobef\documents\github\weapon-randomizer\swordgeneratordriver.cpp
+	<iostream>
+	"greatSword.h"
+	"stats.h"
+
+1701288938 source:c:\users\kobef\documents\github\weapon-randomizer\weapon.cpp
+	"weapon.h"
+
+1701291198 source:c:\users\kobef\documents\github\weapon-randomizer\melee.cpp
+	"melee.h"
+
