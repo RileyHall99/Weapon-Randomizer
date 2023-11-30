@@ -17,7 +17,7 @@ melee::melee(float nSharpness , float nRange , float damage , string name , stri
     this->strikeRange = nRange;
     this->durability = nDurability;
 }
-
+//Accessors 
 float melee::getSharpness(){
     return this->sharpness;
 }
@@ -27,7 +27,7 @@ float melee::getStrikeRange(){
 float melee::getDurability(){
     return this->durability;
 }
-
+//Mutators
 void melee::setSharpness(float nSharpness){
     this->sharpness = nSharpness;
 }
@@ -38,6 +38,8 @@ void melee::setStrikeRange(float nRange){
 void melee::setDurability(float nDura){
     this->durability = nDura;
 }
+
+//To string 
 
 string melee::toString(){
     return "Sharpness  : " + to_string(this->sharpness) + "\n" \
