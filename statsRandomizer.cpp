@@ -1,4 +1,4 @@
-#include "stats.h"
+#include "RandomStats.h"
 
 	RandomStats::RandomStats(GreatSword &s1) {
 		this->currentTier = setTier();
@@ -10,7 +10,6 @@
 		s1.setTier(this->currentTier);
 		s1.setEdges(assignEdges());
 		s1.setLength(assignLength());
-		s1.setDurability(assignDurability());
 		s1.setAttr(getAttributes());
 	}
 	int RandomStats::assignSharpness() {
@@ -121,26 +120,6 @@
 		int output = distribution(gen);
 		return this->tiers[output];
 
-	}
-
-	int RandomStats::assignDurability() {
-		int max, min, output;
-		if (this->currentTier == "Low") {
-			min = 100;
-			max = 104;
-			return output = min + (rand() % static_cast<int>(max - min + 1));
-
-		}
-		else if (this->currentTier == "Medium") {
-			min = 105;
-			max = 109;
-			return output = min + (rand() % static_cast<int>(max - min + 1));
-		}
-		else {
-			min = 200;
-			max = 240;
-			return output = min + (rand() % static_cast<int>(max - min + 1));
-		}
 	}
 
 	string RandomStats::getAttributes() {

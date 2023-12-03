@@ -40,8 +40,8 @@ string GreatSword::getAttr() {
 }
 
 
-void GreatSword::calculateDamage(float strength) {
-    this->setDamage(this->getSharpness() * this->weight * strength);
+void GreatSword::attack() {
+    cout << "Swinging greatsword" << endl;
 }
 
 string GreatSword::toString(){
@@ -50,7 +50,7 @@ string GreatSword::toString(){
     + "Edges : " + to_string(this->edges) + "\n" + " Attribute " + this->attributes + "\n" + Melee::toString() + "\n" + Weapon::toString();
 }
 
-// GreatSword::~GreatSword(){
-//     cout<<"great Sword Destroyed";
-// }
+GreatSword::~GreatSword() {
+    cout<<"Greatsword destroyed" << endl;
+}
 

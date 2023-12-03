@@ -10,7 +10,7 @@ class GreatSword : public Melee {
     public:
         GreatSword();
         GreatSword(float nWeight , float nLength , int nEdge);
-        //~GreatSword();
+        ~GreatSword();
         void setWeight(float nWeight);
         void setLength(float nLength);
         void setEdges(int nEdges);
@@ -22,11 +22,7 @@ class GreatSword : public Melee {
         string getAttr();
 
         float attackRange(float stepSize);
-        void calculateDamage(float strength);
+        void attack();
         string toString();
-
-
-
-
 
 };

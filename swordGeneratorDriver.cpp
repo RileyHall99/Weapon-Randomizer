@@ -1,6 +1,6 @@
 #include <iostream>
 #include "greatSword.h"
-#include "stats.h"
+#include "RandomStats.h"
 using namespace std;
 int main(){
     cout << "Creating new great sword \n";
@@ -11,7 +11,7 @@ int main(){
 
    // s1.setSharpness(stats.assignSharpness());
     cout << "New sword\n";
-    s1.calculateDamage(15);
+    s1.attack();
     cout << s1.toString();
 
 
