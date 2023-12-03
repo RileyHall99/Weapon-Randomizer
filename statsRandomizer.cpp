@@ -1,6 +1,6 @@
 #include "stats.h"
 
-	RandomStats::RandomStats(greatSword &s1) {
+	RandomStats::RandomStats(GreatSword &s1) {
 		this->currentTier = setTier();
 		cout << "Currently given great sword object";
 		s1.setSharpness(assignSharpness());

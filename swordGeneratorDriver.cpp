@@ -3,11 +3,10 @@
 #include "stats.h"
 using namespace std;
 int main(){
-    cout << "Creating new great sword \n"; 
+    cout << "Creating new great sword \n";
 
-    greatSword sword(55.0 , 100.0 , 2);
-    // greatSword s1(0.0 , 0.0 , 1);
-    greatSword s1;
+    GreatSword sword(55.0 , 100.0 , 2);
+    GreatSword s1;
     RandomStats stats(s1);
 
    // s1.setSharpness(stats.assignSharpness());
@@ -18,5 +17,5 @@ int main(){
 
     cout << "WHAT???\n";
     cout << s1.getSharpness();
-    
-}   
+
+}

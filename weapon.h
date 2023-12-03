@@ -5,7 +5,8 @@
 #include <string>
 #include <iostream>
 using namespace std;
-class weapon{
+
+class Weapon{
     private:
         float damage;
         string type;
@@ -13,8 +14,8 @@ class weapon{
         string tier;
     public:
         //constructors
-        weapon();
-        weapon(string nName , float nDamage , string nType , string nTier);
+        Weapon();
+        Weapon(string nName , float nDamage , string nType , string nTier);
         //mutators
         void setDamage(float nDamage);
         void setName(string nName);
@@ -31,6 +32,6 @@ class weapon{
         virtual void calculateDamage(); //used to calculate damage done to a object of sword
         string toString();
 
-        virtual ~weapon();
+        virtual ~Weapon();
 };
 #endif

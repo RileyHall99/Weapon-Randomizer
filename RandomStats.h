@@ -4,7 +4,7 @@
 #include <map>
 #include <vector>
 #include <random>
-#include "greatSword.h"
+#include "GreatSword.h"
 //#include <nlomann/json.hpp>
 using namespace std;
 class RandomStats {
@@ -20,7 +20,7 @@ private:
 
 public:
 	RandomStats();
-	RandomStats(greatSword &s1);
+	RandomStats(GreatSword &s1);
 
 	string getAttributes();
 	int assignSharpness();

@@ -1,32 +1,32 @@
-#pragma once 
+#pragma once
 
-#include "melee.h"
-class greatSword : public melee {
+#include "Melee.h"
+class GreatSword : public Melee {
     private:
-        float weight; 
-        float length; 
-        int edges; 
-        string attributes; 
+        float weight;
+        float length;
+        int edges;
+        string attributes;
     public:
-        greatSword(); 
-        greatSword(float nWeight , float nLength , int nEdge); 
-        //~greatSword();
+        GreatSword();
+        GreatSword(float nWeight , float nLength , int nEdge);
+        //~GreatSword();
         void setWeight(float nWeight);
-        void setLength(float nLength); 
-        void setEdges(int nEdges); 
+        void setLength(float nLength);
+        void setEdges(int nEdges);
         void setAttr(string attr);
 
-        int getEdges(); 
+        int getEdges();
         float getWeight();
-        float getLength(); 
+        float getLength();
         string getAttr();
 
         float attackRange(float stepSize);
         void calculateDamage(float strength);
         string toString();
 
-        
 
-        
+
+
 
 };

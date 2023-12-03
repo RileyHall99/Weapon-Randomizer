@@ -1,11 +1,11 @@
-#include "ranged.h"
+#include "Ranged.h"
 
-ranged::ranged()
+Ranged::Ranged()
 {
     //ctor
 }
 
-ranged::~ranged()
+Ranged::~Ranged()
 {
     //dtor
 }

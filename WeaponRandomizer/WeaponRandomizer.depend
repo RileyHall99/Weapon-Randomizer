@@ -37,47 +37,47 @@
 1701287342 source:c:\users\kobef\documents\github\weapon-randomizer\swordgenerator\stats.cpp
 	"stats.h"
 
-1701289736 source:c:\users\kobef\documents\github\weapon-randomizer\ranged.cpp
-	"ranged.h"
+1701633989 source:c:\users\kobef\documents\github\weapon-randomizer\ranged.cpp
+	"Ranged.h"
 
-1701290354 c:\users\kobef\documents\github\weapon-randomizer\ranged.h
-	<weapon.h>
+1701633989 c:\users\kobef\documents\github\weapon-randomizer\ranged.h
+	"Weapon.h"
 
-1701287342 source:c:\users\kobef\documents\github\weapon-randomizer\greatsword.cpp
-	"greatSword.h"
+1701633766 source:c:\users\kobef\documents\github\weapon-randomizer\greatsword.cpp
+	"GreatSword.h"
 
-1701287342 c:\users\kobef\documents\github\weapon-randomizer\greatsword.h
-	"melee.h"
+1701633766 c:\users\kobef\documents\github\weapon-randomizer\greatsword.h
+	"Melee.h"
 
-1701290412 c:\users\kobef\documents\github\weapon-randomizer\melee.h
-	"weapon.h"
+1701633381 c:\users\kobef\documents\github\weapon-randomizer\melee.h
+	"Weapon.h"
 
-1701289992 c:\users\kobef\documents\github\weapon-randomizer\weapon.h
+1701633217 c:\users\kobef\documents\github\weapon-randomizer\weapon.h
 	<string>
 	<iostream>
 
-1701287342 source:c:\users\kobef\documents\github\weapon-randomizer\stats.cpp
+1701630251 source:c:\users\kobef\documents\github\weapon-randomizer\stats.cpp
 	"stats.h"
 
-1701288991 c:\users\kobef\documents\github\weapon-randomizer\stats.h
+1701633797 c:\users\kobef\documents\github\weapon-randomizer\stats.h
 	<string>
 	<iostream>
 	<map>
 	<vector>
 	<random>
-	"greatSword.h"
+	"GreatSword.h"
 
-1701289037 source:c:\users\kobef\documents\github\weapon-randomizer\statsrandomizer.cpp
+1701633847 source:c:\users\kobef\documents\github\weapon-randomizer\statsrandomizer.cpp
 	"stats.h"
 
-1701287342 source:c:\users\kobef\documents\github\weapon-randomizer\swordgeneratordriver.cpp
+1701633862 source:c:\users\kobef\documents\github\weapon-randomizer\swordgeneratordriver.cpp
 	<iostream>
 	"greatSword.h"
 	"stats.h"
 
-1701288938 source:c:\users\kobef\documents\github\weapon-randomizer\weapon.cpp
-	"weapon.h"
+1701633206 source:c:\users\kobef\documents\github\weapon-randomizer\weapon.cpp
+	"Weapon.h"
 
-1701291198 source:c:\users\kobef\documents\github\weapon-randomizer\melee.cpp
-	"melee.h"
+1701633515 source:c:\users\kobef\documents\github\weapon-randomizer\melee.cpp
+	"Melee.h"
 

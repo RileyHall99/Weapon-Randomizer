@@ -1,14 +1,14 @@
 #ifndef RANGED_H
 #define RANGED_H
 
-#include <weapon.h>
+#include "Weapon.h"
 
 
-class ranged : public weapon
+class Ranged : public Weapon
 {
     public:
-        ranged();
-        virtual ~ranged();
+        Ranged();
+        virtual ~Ranged();
 
     protected:
 

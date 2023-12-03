@@ -31,6 +31,18 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="../Weapon.cpp" />
+		<Unit filename="../Weapon.h" />
+		<Unit filename="../greatSword.cpp" />
+		<Unit filename="../greatSword.h" />
+		<Unit filename="../melee.cpp" />
+		<Unit filename="../melee.h" />
+		<Unit filename="../ranged.cpp" />
+		<Unit filename="../ranged.h" />
+		<Unit filename="../stats.cpp" />
+		<Unit filename="../stats.h" />
+		<Unit filename="../statsRandomizer.cpp" />
+		<Unit filename="../swordGeneratorDriver.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

@@ -1,16 +1,16 @@
 #pragma once
 #ifndef melee_h
 #define melee_h
-#include "weapon.h"
-class melee : public weapon{
+#include "Weapon.h"
+class Melee : public Weapon{
     private:
         float sharpness;
         float strikeRange;
         float durability;
         string type = "melee";
     public:
-        melee();
-        melee(float nSharpness , float nStrikeRange , float damage , string name  , string tier , float nDurability);
+        Melee();
+        Melee(float nSharpness , float nStrikeRange , float damage , string name  , string tier , float nDurability);
         //accessors
         float getSharpness();
         float getStrikeRange();
@@ -22,7 +22,7 @@ class melee : public weapon{
         string toString();
         void decreaseDurability(int weaponDamge);
         void assignStats();
-        ~melee();
+        ~Melee();
 
 };
 
