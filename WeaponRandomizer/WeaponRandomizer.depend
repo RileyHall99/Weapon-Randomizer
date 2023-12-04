@@ -43,18 +43,19 @@
 1701633989 c:\users\kobef\documents\github\weapon-randomizer\ranged.h
 	"Weapon.h"
 
-1701636679 source:c:\users\kobef\documents\github\weapon-randomizer\greatsword.cpp
+1701654705 source:c:\users\kobef\documents\github\weapon-randomizer\greatsword.cpp
 	"GreatSword.h"
 
-1701636574 c:\users\kobef\documents\github\weapon-randomizer\greatsword.h
+1701647419 c:\users\kobef\documents\github\weapon-randomizer\greatsword.h
 	"Melee.h"
 
-1701636254 c:\users\kobef\documents\github\weapon-randomizer\melee.h
+1701645631 c:\users\kobef\documents\github\weapon-randomizer\melee.h
 	"Weapon.h"
 
-1701635843 c:\users\kobef\documents\github\weapon-randomizer\weapon.h
+1701654705 c:\users\kobef\documents\github\weapon-randomizer\weapon.h
 	<string>
 	<iostream>
+	<iomanip>
 
 1701630251 source:c:\users\kobef\documents\github\weapon-randomizer\stats.cpp
 	"stats.h"
@@ -67,28 +68,34 @@
 	<random>
 	"GreatSword.h"
 
-1701636375 source:c:\users\kobef\documents\github\weapon-randomizer\statsrandomizer.cpp
+1701665436 source:c:\users\kobef\documents\github\weapon-randomizer\statsrandomizer.cpp
 	"RandomStats.h"
 
-1701636584 source:c:\users\kobef\documents\github\weapon-randomizer\swordgeneratordriver.cpp
+1701672211 source:c:\users\kobef\documents\github\weapon-randomizer\swordgeneratordriver.cpp
 	<iostream>
-	"greatSword.h"
-	"RandomStats.h"
+	<iomanip>
+	"WeaponGenerator.h"
 
-1701636679 source:c:\users\kobef\documents\github\weapon-randomizer\weapon.cpp
+1701664404 source:c:\users\kobef\documents\github\weapon-randomizer\weapon.cpp
 	"Weapon.h"
 
-1701636679 source:c:\users\kobef\documents\github\weapon-randomizer\melee.cpp
+1701666167 source:c:\users\kobef\documents\github\weapon-randomizer\melee.cpp
 	"Melee.h"
 
-1701634215 source:c:\users\kobef\documents\github\weapon-randomizer\randomstats.cpp
+1701672666 source:c:\users\kobef\documents\github\weapon-randomizer\randomstats.cpp
 	"RandomStats.h"
 
-1701633797 c:\users\kobef\documents\github\weapon-randomizer\randomstats.h
+1701665963 c:\users\kobef\documents\github\weapon-randomizer\randomstats.h
 	<string>
 	<iostream>
-	<map>
-	<vector>
 	<random>
+	<ctime>
 	"GreatSword.h"
+
+1701644479 c:\users\kobef\documents\github\weapon-randomizer\weapongenerator.h
+	"GreatSword.h"
+	"RandomStats.h"
+
+1701666081 source:c:\users\kobef\documents\github\weapon-randomizer\weapongenerator.cpp
+	"WeaponGenerator.h"
 

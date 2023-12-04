@@ -8,7 +8,7 @@ class Melee : public Weapon{
         float strikeRange;
     public:
         Melee();
-        Melee(float nSharpness, float nStrikeRange, float damage, string name, string tier);
+        Melee(string nName, float nDamage, string nTier, float nSharpness, float nStrikeRange);
         //accessors
         float getSharpness();
         float getStrikeRange();
@@ -16,10 +16,10 @@ class Melee : public Weapon{
         void setSharpness(float nSharpness);
         void setStrikeRange(float nRange);
 
+        // Implemented on derived weapons
         void attack() = 0;
-        string toString();
+        virtual string toString();
         void assignStats();
         ~Melee();
 };
-
 #endif

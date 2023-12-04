@@ -1,3 +1,5 @@
+// Weapon.cpp
+
 #include "Weapon.h"
 
 // Constructors
@@ -23,11 +25,17 @@ string Weapon::getTier(){ return this->tier; }
 float Weapon::getDamage(){ return this->damage; }
 
 string Weapon::toString(){
-    return "Damage : " + to_string(this->damage) + "\n"\
-    "Name : " + this->name + "\n"\
+    // Truncate damage
+    stringstream stream;
+    stream << std::fixed << std::setprecision(2) << this->damage;
+    string damageRounded = stream.str();
+
+    return "Name : " + this->name + "\n"\
+    "Damage : " + damageRounded + "\n"\
     "Tier : " + this->tier + "\n";
 }
 
 Weapon::~Weapon() {
     cout << "Weapon destroyed" << endl;
 }
+

@@ -1,14 +1,17 @@
 /*Generic class, Top of the hieracrchy chain for all weapons*/
 #ifndef weapon_h
 #define weapon_h
+
 #include <string>
 #include <iostream>
+#include <iomanip>
+
 using namespace std;
 
 class Weapon {
     private:
-        float damage;
         string name;
+        float damage;
         string tier;
     public:
         //constructors
@@ -23,8 +26,9 @@ class Weapon {
         string getName();
         string getTier();
 
-        virtual void attack() = 0;  // Implemented on derived weapons
-        string toString();
+        // Implemented on derived weapons
+        virtual void attack() = 0;
+        virtual string toString();
 
         virtual ~Weapon();
 };

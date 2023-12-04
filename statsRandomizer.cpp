@@ -9,7 +9,6 @@
 		s1.setName(assignName());
 		s1.setTier(this->currentTier);
 		s1.setEdges(assignEdges());
-		s1.setLength(assignLength());
 		s1.setAttr(getAttributes());
 	}
 	int RandomStats::assignSharpness() {
@@ -43,29 +42,6 @@
 		return output;
 	}
 
-	int RandomStats::assignLength() {
-		int max, min, output;
-
-		if (this->currentTier == "Low") {
-			min = 50;
-			max = 90;
-			output = min + (rand() % static_cast<int>(max - min + 1));
-			return output;
-		}
-		else if (this->currentTier == "Medium") {
-			min = 100;
-			max = 120;
-			output = min + (rand() % static_cast<int>(max - min + 1));
-			return output;
-		}
-		else {
-			min = 115;
-			max = 140;
-			output = min + (rand() % static_cast<int>(max - min + 1));
-			return output;
-		}
-	}
-
 	int RandomStats::assignWeight() {
 		int max, min, output;
 		if (this->currentTier == "Low") {
@@ -86,7 +62,7 @@
 		}
 	}
 	string RandomStats::assignName() {
-		int output  , max;
+		int output, max;
 		int min = 0;
 		random_device rd;
 		mt19937 gen(rd());
@@ -95,19 +71,19 @@
 			/*output = min + (rand() % static_cast<int>(max - min + 1));*/
 			uniform_int_distribution<int>distribution(min, max);
 			output = distribution(gen);
-			return this->lNames[output];
+			return this->lSwordNames[output];
 		}
 		else if (this->currentTier == "Medium") {
 			max = 4-1;
 			uniform_int_distribution<int>distribution(min, max);
 			output = distribution(gen);
-			return this->mNames[output];
+			return this->mSwordNames[output];
 		}
 		else {
 			max = 5-1;
 			uniform_int_distribution<int>distribution(min, max);
 			output = distribution(gen);
-			return this->hNames[output];
+			return this->hSwordNames[output];
 		}
 	}
 

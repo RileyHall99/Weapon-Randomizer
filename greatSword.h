@@ -1,28 +1,30 @@
-#pragma once
+#ifndef greatsword_h
+#define greatsword_h
 
 #include "Melee.h"
+
 class GreatSword : public Melee {
     private:
         float weight;
-        float length;
         int edges;
-        string attributes;
+        string attribute;
     public:
         GreatSword();
-        GreatSword(float nWeight , float nLength , int nEdge);
+        GreatSword(string nName, float nDamage, string nTier, float nSharpness,
+                   float nRange, float nWeight, int nEdges);
         ~GreatSword();
+        // Setters
         void setWeight(float nWeight);
         void setLength(float nLength);
         void setEdges(int nEdges);
         void setAttr(string attr);
-
+        // Getters
         int getEdges();
         float getWeight();
         float getLength();
         string getAttr();
 
-        float attackRange(float stepSize);
         void attack();
         string toString();
-
 };
+#endif
