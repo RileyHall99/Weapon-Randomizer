@@ -11,7 +11,7 @@ class GreatSword : public Melee {
     public:
         GreatSword();
         GreatSword(string nName, float nDamage, string nTier, float nSharpness,
-                   float nRange, float nWeight, int nEdges);
+                   float nRange, float nWeight, int nEdges, string nAttribute);
         ~GreatSword();
         // Setters
         void setWeight(float nWeight);

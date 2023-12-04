@@ -1,61 +1,28 @@
+// RandomStats.cpp
+
 #include "RandomStats.h"
 
-RandomStats::RandomStats() : gen(std::time(nullptr)) { // Seed the random num generator using system time
-	this->currentTier = "";
-	srand(2);
-}
-
-string RandomStats::assignRarity() {
-	int min = 0;
-	int max = 3;
-	int output = min + (rand() % static_cast<int>(max - min + 1));
-	cout << output;
-	this->currentTier = tiers[2];
-
-	return this->currentTier;
-}
-
-// GreatSword: name
-string RandomStats::getRandomSwordName(string tier) {
-    uniform_int_distribution<int> distribution(0, NAMES_SIZE - 1);
-    int randomIndex = distribution(gen);
-    string name;
-
-    if (tier == "Low") {
-        return this->lSwordNames[randomIndex];
-    }
-    else if (tier == "Medium") {
-        return this->mSwordNames[randomIndex];
-    }
-    else if (tier == "High") {
-        return this->hSwordNames[randomIndex];
-    }
-    else {
-        return "";
-    }
-}
-
-// TODO: add random name functions for dagger, bow, hand cannon
-// and also 5 names for each
+// Constructor; seed the random num generator using system time
+RandomStats::RandomStats() : gen(std::time(nullptr)) {}
 
 // Weapon: damage
 float RandomStats::getRandomDamage(string tier) {
     float minDmg, maxDmg, output;
 
     if (tier == "Low") {
-        minDmg = 10;
-        maxDmg = 15;
+        minDmg = 10.0;
+        maxDmg = 15.0;
     }
     else if (tier == "Medium") {
-        minDmg = 16;
-        maxDmg = 21;
+        minDmg = 16.0;
+        maxDmg = 21.0;
     }
     else if (tier == "High") {
-        minDmg = 30;
-        maxDmg = 130;
+        minDmg = 30.0;
+        maxDmg = 130.0;
     }
     else {
-        return -1;
+        return -1.0;
     }
 
     uniform_real_distribution<double> distribution(minDmg, maxDmg);
@@ -80,14 +47,13 @@ float RandomStats::getRandomSharpness(string tier) {
         maxSharpness = 6.0;
     }
     else {
-        return -1;
+        return -1.0;
     }
 
     uniform_real_distribution<double> distribution(minSharpness, maxSharpness);
     output = distribution(gen);
     return roundFloat(output);
 }
-
 // Melee: strike range
 float RandomStats::getRandomStrikeRange(string tier) {
     float minRange, maxRange, output;
@@ -105,16 +71,142 @@ float RandomStats::getRandomStrikeRange(string tier) {
         maxRange = 20.0;
     }
     else {
-        return -1;
+        return -1.0;
     }
 
-    output = minRange + (minRange + static_cast<float>(rand()) / (RAND_MAX / maxRange - minRange));
+    uniform_real_distribution<double> distribution(minRange, maxRange);
+    output = distribution(gen);
     return roundFloat(output);
 }
 
+// GreatSword: name
+string RandomStats::getRandomSwordName(string tier) {
+    uniform_int_distribution<int> distribution(0, NAMES_SIZE - 1);
+    int randomIndex = distribution(gen);
+
+    if (tier == "Low") {
+        return this->lSwordNames[randomIndex];
+    }
+    else if (tier == "Medium") {
+        return this->mSwordNames[randomIndex];
+    }
+    else if (tier == "High") {
+        return this->hSwordNames[randomIndex];
+    }
+    else {
+        return "";
+    }
+}
+// GreatSword: weight
+float RandomStats::getRandomWeight(string tier) {
+    float minWeight, maxWeight, output;
+
+    if (tier == "Low") {
+        minWeight = 0.2;
+        maxWeight = 1.5;
+    }
+    else if (tier == "Medium") {
+        minWeight = 1.51;
+        maxWeight = 5.0;
+    }
+    else if (tier == "High") {
+        minWeight = 5.01;
+        maxWeight = 80.0;
+    }
+    else {
+        return -1.0;
+    }
+
+    uniform_real_distribution<double> distribution(minWeight, maxWeight);
+    output = distribution(gen);
+    return roundFloat(output);
+}
+// GreatSword: edges
+int RandomStats::getRandomEdges(string tier) {
+    int minEdges, maxEdges;
+
+    if (tier == "Low") {
+        minEdges = 1;
+        maxEdges = 2;
+    }
+    else if (tier == "Medium") {
+        minEdges = 1;
+        maxEdges = 3;
+    }
+    else if (tier == "High") {
+        minEdges = 2;
+        maxEdges = 5;
+    }
+    else {
+        return -1;
+    }
+
+    uniform_int_distribution<int> distribution(minEdges, maxEdges);
+    return distribution(gen);
+}
+// GreatSword: attribute
+string RandomStats::getRandomAttribute(string tier) {
+    uniform_int_distribution<int> distribution(0, ATTRIBUTES_SIZE - 1);
+    int randomIndex = distribution(gen);
+
+    if (tier == "Low") {
+        return this->lAttr[randomIndex];
+    }
+    else if (tier == "Medium") {
+        return this->mAttr[randomIndex];
+    }
+    else if (tier == "High") {
+        return this->hAttr[randomIndex];
+    }
+    else {
+        return "";
+    }
+}
+
+// Dagger: name
+string RandomStats::getRandomDaggerName(string tier) {
+    uniform_int_distribution<int> distribution(0, NAMES_SIZE - 1);
+    int randomIndex = distribution(gen);
+
+    if (tier == "Low") {
+        return this->lDaggerNames[randomIndex];
+    }
+    else if (tier == "Medium") {
+        return this->mDaggerNames[randomIndex];
+    }
+    else if (tier == "High") {
+        return this->hDaggerNames[randomIndex];
+    }
+    else {
+        return "";
+    }
+}
+// Dagger: numStrikes
+int RandomStats::getRandomNumStrikes(string tier) {
+    int minStrikes, maxStrikes;
+
+    if (tier == "Low") {
+        minStrikes = 1;
+        maxStrikes = 2;
+    }
+    else if (tier == "Medium") {
+        minStrikes = 2;
+        maxStrikes = 3;
+    }
+    else if (tier == "High") {
+        minStrikes = 3;
+        maxStrikes = 5;
+    }
+    else {
+        return -1;
+    }
+
+    uniform_int_distribution<int> distribution(minStrikes, maxStrikes);
+    return distribution(gen);
+}
+
 // Round a float to 2 decimal places
-float RandomStats::roundFloat(float x)
-{
+float RandomStats::roundFloat(float x) {
     x = (int)((x * 100) + 0.5);
     return (float)(x / 100);
 }

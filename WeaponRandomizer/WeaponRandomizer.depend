@@ -43,13 +43,13 @@
 1701633989 c:\users\kobef\documents\github\weapon-randomizer\ranged.h
 	"Weapon.h"
 
-1701654705 source:c:\users\kobef\documents\github\weapon-randomizer\greatsword.cpp
+1701728904 source:c:\users\kobef\documents\github\weapon-randomizer\greatsword.cpp
 	"GreatSword.h"
 
-1701647419 c:\users\kobef\documents\github\weapon-randomizer\greatsword.h
+1701728587 c:\users\kobef\documents\github\weapon-randomizer\greatsword.h
 	"Melee.h"
 
-1701645631 c:\users\kobef\documents\github\weapon-randomizer\melee.h
+1701724533 c:\users\kobef\documents\github\weapon-randomizer\melee.h
 	"Weapon.h"
 
 1701654705 c:\users\kobef\documents\github\weapon-randomizer\weapon.h
@@ -71,7 +71,7 @@
 1701665436 source:c:\users\kobef\documents\github\weapon-randomizer\statsrandomizer.cpp
 	"RandomStats.h"
 
-1701672211 source:c:\users\kobef\documents\github\weapon-randomizer\swordgeneratordriver.cpp
+1701731618 source:c:\users\kobef\documents\github\weapon-randomizer\swordgeneratordriver.cpp
 	<iostream>
 	<iomanip>
 	"WeaponGenerator.h"
@@ -82,20 +82,27 @@
 1701666167 source:c:\users\kobef\documents\github\weapon-randomizer\melee.cpp
 	"Melee.h"
 
-1701672666 source:c:\users\kobef\documents\github\weapon-randomizer\randomstats.cpp
+1701731906 source:c:\users\kobef\documents\github\weapon-randomizer\randomstats.cpp
 	"RandomStats.h"
 
-1701665963 c:\users\kobef\documents\github\weapon-randomizer\randomstats.h
+1701731780 c:\users\kobef\documents\github\weapon-randomizer\randomstats.h
 	<string>
 	<iostream>
 	<random>
 	<ctime>
 	"GreatSword.h"
 
-1701644479 c:\users\kobef\documents\github\weapon-randomizer\weapongenerator.h
+1701730650 c:\users\kobef\documents\github\weapon-randomizer\weapongenerator.h
 	"GreatSword.h"
+	"Dagger.h"
 	"RandomStats.h"
 
-1701666081 source:c:\users\kobef\documents\github\weapon-randomizer\weapongenerator.cpp
+1701730635 source:c:\users\kobef\documents\github\weapon-randomizer\weapongenerator.cpp
 	"WeaponGenerator.h"
+
+1701730046 source:c:\users\kobef\documents\github\weapon-randomizer\dagger.cpp
+	"Dagger.h"
+
+1701729806 c:\users\kobef\documents\github\weapon-randomizer\dagger.h
+	<Melee.h>
 

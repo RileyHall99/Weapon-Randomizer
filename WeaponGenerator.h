@@ -2,6 +2,7 @@
 #define weapongenerator_h
 
 #include "GreatSword.h"
+#include "Dagger.h"
 #include "RandomStats.h"
 
 class WeaponGenerator
@@ -10,6 +11,7 @@ class WeaponGenerator
         WeaponGenerator();
         ~WeaponGenerator();
         GreatSword* getRandomGreatSword(string);
+        Dagger* getRandomDagger(string);
     private:
         RandomStats randomStats;
 };

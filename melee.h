@@ -2,7 +2,7 @@
 #define melee_h
 #include "Weapon.h"
 
-class Melee : public Weapon{
+class Melee : public Weapon {
     private:
         float sharpness;
         float strikeRange;
