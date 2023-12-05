@@ -1,17 +1,18 @@
 #ifndef weapongenerator_h
 #define weapongenerator_h
 
+#include "RandomStats.h"
 #include "GreatSword.h"
 #include "Dagger.h"
-#include "RandomStats.h"
+#include "Bow.h"
 
-class WeaponGenerator
-{
+class WeaponGenerator {
     public:
         WeaponGenerator();
         ~WeaponGenerator();
         GreatSword* getRandomGreatSword(string);
         Dagger* getRandomDagger(string);
+        Bow* getRandomBow(string);
     private:
         RandomStats randomStats;
 };

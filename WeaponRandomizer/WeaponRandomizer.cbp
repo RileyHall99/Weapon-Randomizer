@@ -33,6 +33,8 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="../Bow.cpp" />
+		<Unit filename="../Bow.h" />
 		<Unit filename="../Dagger.cpp" />
 		<Unit filename="../Dagger.h" />
 		<Unit filename="../GreatSword.cpp" />

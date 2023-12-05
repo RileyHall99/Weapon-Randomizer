@@ -1,11 +1,9 @@
 #ifndef dagger_h
 #define dagger_h
 
-#include <Melee.h>
+#include "Melee.h"
 
-
-class Dagger : public Melee
-{
+class Dagger : public Melee {
     private:
         int numStrikes;
     public:

@@ -1,11 +1,23 @@
 #include "Ranged.h"
 
-Ranged::Ranged()
-{
-    //ctor
+// Constructors
+Ranged::Ranged() : Weapon() {
+    this->maxAmmo = 0;
+}
+Ranged::Ranged(string nName, float nDamage, string nTier, int nMaxAmmo)
+    : Weapon(nName, nDamage, nTier) {
+    this->maxAmmo = nMaxAmmo;
 }
 
-Ranged::~Ranged()
-{
-    //dtor
+
+// Getter and setter
+int Ranged::getMaxAmmo() { return this->maxAmmo; }
+void Ranged::setMaxAmmo(int nMaxAmmo) { this->maxAmmo = nMaxAmmo; }
+
+string Ranged::toString() {
+    return Weapon::toString() + "Max ammo : " + to_string(this->maxAmmo) + " \n";
+}
+
+Ranged::~Ranged() {
+    cout << "Ranged weapon destroyed" << endl;
 }

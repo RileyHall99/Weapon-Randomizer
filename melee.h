@@ -1,5 +1,6 @@
 #ifndef melee_h
 #define melee_h
+
 #include "Weapon.h"
 
 class Melee : public Weapon {
@@ -9,17 +10,15 @@ class Melee : public Weapon {
     public:
         Melee();
         Melee(string nName, float nDamage, string nTier, float nSharpness, float nStrikeRange);
+        ~Melee();
         //accessors
         float getSharpness();
         float getStrikeRange();
         //mutators
         void setSharpness(float nSharpness);
         void setStrikeRange(float nRange);
-
         // Implemented on derived weapons
         void attack() = 0;
         virtual string toString();
-        void assignStats();
-        ~Melee();
 };
 #endif

@@ -30,7 +30,12 @@ public:
 	// Dagger members
 	string getRandomDaggerName(string tier);
 	int getRandomNumStrikes(string tier);
+
+	// Ranged member
+	int getRandomMaxAmmo(string tier);
 	// Bow members
+	string getRandomBowName(string tier);
+	int getRandomArrowsPerVolley(string tier);
 	// HandCannon members
 
 	float roundFloat(float x);
@@ -53,7 +58,7 @@ private:
 	const string mHandCannonNames[NAMES_SIZE] = {"Hand Cannon" , "Boom Stick" , "Golden Eye" , "Musket" , "Hit and Run"};
 	const string hHandCannonNames[NAMES_SIZE] = { "Black Beard's Gun" , "KaBoom" , "He Was Standing" , "Last Resort" , "DEAGLE" };
 	//Bow
-	const string lBowNames[NAMES_SIZE] = { "Stick and String" , "This is a Bow?" , "Loose Ends" , "Tie The Knot" , "Bow"};
+	const string lBowNames[NAMES_SIZE] = { "Stick and String" , "This is a Bow?" , "Loose Ends" , "Tie The Knot" , "Copper Longbow"};
 	const string mBowNames[NAMES_SIZE] = {"English Long Bow" , "CrossBow" , "Soldier's Bow" , "Armory Surplus" , "Merchant's Bow"};
 	const string hBowNames[NAMES_SIZE] = {"Sniper's Dream" , "Long Shot" , "Hail Mary" , "From Downtown" , "Artemis's Bow"};
 };

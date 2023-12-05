@@ -205,6 +205,71 @@ int RandomStats::getRandomNumStrikes(string tier) {
     return distribution(gen);
 }
 
+// Ranged: maxAmmo
+int RandomStats::getRandomMaxAmmo(string tier) {
+    int minAmmo, maxAmmo;
+
+    if (tier == "Low") {
+        minAmmo = 1;
+        maxAmmo = 5;
+    }
+    else if (tier == "Medium") {
+        minAmmo = 6;
+        maxAmmo = 20;
+    }
+    else if (tier == "High") {
+        minAmmo = 21;
+        maxAmmo = 100;
+    }
+    else {
+        return -1;
+    }
+
+    uniform_int_distribution<int> distribution(minAmmo, maxAmmo);
+    return distribution(gen);
+}
+
+// Bow: name
+string RandomStats::getRandomBowName(string tier) {
+    uniform_int_distribution<int> distribution(0, NAMES_SIZE - 1);
+    int randomIndex = distribution(gen);
+
+    if (tier == "Low") {
+        return this->lBowNames[randomIndex];
+    }
+    else if (tier == "Medium") {
+        return this->mBowNames[randomIndex];
+    }
+    else if (tier == "High") {
+        return this->hBowNames[randomIndex];
+    }
+    else {
+        return "";
+    }
+}
+// Bow: arrowsPerVolley
+int RandomStats::getRandomArrowsPerVolley(string tier) {
+    int minArrows, maxArrows;
+
+    if (tier == "Low") {
+        return 1;
+    }
+    else if (tier == "Medium") {
+        minArrows = 1;
+        maxArrows = 3;
+    }
+    else if (tier == "High") {
+        minArrows = 1;
+        maxArrows = 10;
+    }
+    else {
+        return -1;
+    }
+
+    uniform_int_distribution<int> distribution(minArrows, maxArrows);
+    return distribution(gen);
+}
+
 // Round a float to 2 decimal places
 float RandomStats::roundFloat(float x) {
     x = (int)((x * 100) + 0.5);

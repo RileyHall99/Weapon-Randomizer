@@ -33,3 +33,14 @@ Dagger* WeaponGenerator::getRandomDagger(string tier) {
                                    strikeRange, numStrikes);
     return daggerPtr;
 }
+
+// Generate a random Bow
+Bow* WeaponGenerator::getRandomBow(string tier) {
+    string name = randomStats.getRandomBowName(tier);
+    float damage = randomStats.getRandomDamage(tier);
+    int maxAmmo = randomStats.getRandomMaxAmmo(tier);
+    int arrowsPerVolley = randomStats.getRandomArrowsPerVolley(tier);
+
+    Bow* bowPtr = new Bow(name, damage, tier, maxAmmo, arrowsPerVolley);
+    return bowPtr;
+}

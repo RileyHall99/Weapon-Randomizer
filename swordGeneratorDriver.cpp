@@ -8,6 +8,8 @@ using namespace std;
 
 int main(){
     WeaponGenerator generator;
+
+    // Generate a GreatSword of each tier
     Weapon* lowSword = generator.getRandomGreatSword("Low");
     Weapon* midSword = generator.getRandomGreatSword("Medium");
     Weapon* highSword = generator.getRandomGreatSword("High");
@@ -20,6 +22,7 @@ int main(){
     highSword->attack();
     cout << endl;
 
+    // Generate a Dagger of each tier
     Weapon* lowDagger = generator.getRandomDagger("Low");
     Weapon* midDagger = generator.getRandomDagger("Medium");
     Weapon* highDagger = generator.getRandomDagger("High");
@@ -32,10 +35,26 @@ int main(){
     highDagger->attack();
     cout << endl;
 
+    // Generate a Bow of each tier
+    Weapon* lowBow = generator.getRandomBow("Low");
+    Weapon* midBow = generator.getRandomBow("Medium");
+    Weapon* highBow = generator.getRandomBow("High");
+
+    cout << lowBow->toString();
+    lowBow->attack();
+    cout << endl << midBow->toString();
+    midBow->attack();
+    cout << endl << highBow->toString();
+    highBow->attack();
+    cout << endl;
+
     delete lowSword;
     delete midSword;
     delete highSword;
     delete lowDagger;
     delete midDagger;
     delete highDagger;
+    delete lowBow;
+    delete midBow;
+    delete highBow;
 }
