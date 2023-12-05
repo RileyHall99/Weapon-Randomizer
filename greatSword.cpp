@@ -46,14 +46,14 @@ string GreatSword::toString() {
     // Truncate weight
     stringstream stream;
     stream << std::fixed << std::setprecision(2) << this->weight;
-    string weightRounded = stream.str();
+    string weightTruncated = stream.str();
 
-    return Melee::toString() + "Weight : " + weightRounded + "\n"
+    return Melee::toString() + "Weight : " + weightTruncated + "\n"
     + "Edges : " + to_string(this->edges) + "\n"
     + "Attribute : " + this->attribute + "\n";
 }
 
 GreatSword::~GreatSword() {
-    cout<< "Greatsword destroyed" << endl;
+    cout<< "Greatsword " << this->getName() << " destroyed" << endl;
 }
 

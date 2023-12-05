@@ -17,6 +17,7 @@ class Weapon {
         //constructors
         Weapon();
         Weapon(string nName, float nDamage, string nTier);
+        virtual ~Weapon();
         //mutators
         void setDamage(float nDamage);
         void setName(string nName);
@@ -25,11 +26,8 @@ class Weapon {
         float getDamage();
         string getName();
         string getTier();
-
         // Implemented on derived weapons
         virtual void attack() = 0;
         virtual string toString();
-
-        virtual ~Weapon();
 };
 #endif

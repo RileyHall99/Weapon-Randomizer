@@ -35,7 +35,5 @@ string Weapon::toString(){
     "Tier : " + this->tier + "\n";
 }
 
-Weapon::~Weapon() {
-    cout << "Weapon destroyed" << endl;
-}
+Weapon::~Weapon() {}
 

@@ -48,6 +48,19 @@ int main(){
     highBow->attack();
     cout << endl;
 
+    // Generate a HandCannon of each tier
+    Weapon* lowCannon = generator.getRandomHandCannon("Low");
+    Weapon* midCannon = generator.getRandomHandCannon("Medium");
+    Weapon* highCannon = generator.getRandomHandCannon("High");
+
+    cout << lowCannon->toString();
+    lowCannon->attack();
+    cout << endl << midCannon->toString();
+    midCannon->attack();
+    cout << endl << highCannon->toString();
+    highCannon->attack();
+    cout << endl;
+
     delete lowSword;
     delete midSword;
     delete highSword;
@@ -57,4 +70,7 @@ int main(){
     delete lowBow;
     delete midBow;
     delete highBow;
+    delete lowCannon;
+    delete midCannon;
+    delete highCannon;
 }

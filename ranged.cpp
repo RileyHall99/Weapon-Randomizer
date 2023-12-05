@@ -18,6 +18,4 @@ string Ranged::toString() {
     return Weapon::toString() + "Max ammo : " + to_string(this->maxAmmo) + " \n";
 }
 
-Ranged::~Ranged() {
-    cout << "Ranged weapon destroyed" << endl;
-}
+Ranged::~Ranged() {}

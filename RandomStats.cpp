@@ -22,7 +22,7 @@ float RandomStats::getRandomDamage(string tier) {
         maxDmg = 130.0;
     }
     else {
-        return -1.0;
+        return -1;
     }
 
     uniform_real_distribution<double> distribution(minDmg, maxDmg);
@@ -47,7 +47,7 @@ float RandomStats::getRandomSharpness(string tier) {
         maxSharpness = 6.0;
     }
     else {
-        return -1.0;
+        return -1;
     }
 
     uniform_real_distribution<double> distribution(minSharpness, maxSharpness);
@@ -71,7 +71,7 @@ float RandomStats::getRandomStrikeRange(string tier) {
         maxRange = 20.0;
     }
     else {
-        return -1.0;
+        return -1;
     }
 
     uniform_real_distribution<double> distribution(minRange, maxRange);
@@ -114,7 +114,7 @@ float RandomStats::getRandomWeight(string tier) {
         maxWeight = 80.0;
     }
     else {
-        return -1.0;
+        return -1;
     }
 
     uniform_real_distribution<double> distribution(minWeight, maxWeight);
@@ -268,6 +268,49 @@ int RandomStats::getRandomArrowsPerVolley(string tier) {
 
     uniform_int_distribution<int> distribution(minArrows, maxArrows);
     return distribution(gen);
+}
+
+// HandCannon: name
+string RandomStats::getRandomHandCannonName(string tier) {
+    uniform_int_distribution<int> distribution(0, NAMES_SIZE - 1);
+    int randomIndex = distribution(gen);
+
+    if (tier == "Low") {
+        return this->lHandCannonNames[randomIndex];
+    }
+    else if (tier == "Medium") {
+        return this->mHandCannonNames[randomIndex];
+    }
+    else if (tier == "High") {
+        return this->hHandCannonNames[randomIndex];
+    }
+    else {
+        return "";
+    }
+}
+// HandCannon: caliber
+float RandomStats::getRandomCaliber(string tier) {
+    float minCaliber, maxCaliber, output;
+
+    if (tier == "Low") {
+        minCaliber = 0.3;
+        maxCaliber = 0.8;
+    }
+    else if (tier == "Medium") {
+        minCaliber = 0.81;
+        maxCaliber = 1.5;
+    }
+    else if (tier == "High") {
+        minCaliber = 1.51;
+        maxCaliber = 8.0;
+    }
+    else {
+        return -1;
+    }
+
+    uniform_real_distribution<double> distribution(minCaliber, maxCaliber);
+    output = distribution(gen);
+    return roundFloat(output);
 }
 
 // Round a float to 2 decimal places

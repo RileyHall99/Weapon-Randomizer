@@ -37,13 +37,13 @@
 1701287342 source:c:\users\kobef\documents\github\weapon-randomizer\swordgenerator\stats.cpp
 	"stats.h"
 
-1701735658 source:c:\users\kobef\documents\github\weapon-randomizer\ranged.cpp
+1701739881 source:c:\users\kobef\documents\github\weapon-randomizer\ranged.cpp
 	"Ranged.h"
 
 1701736164 c:\users\kobef\documents\github\weapon-randomizer\ranged.h
 	"Weapon.h"
 
-1701728904 source:c:\users\kobef\documents\github\weapon-randomizer\greatsword.cpp
+1701739881 source:c:\users\kobef\documents\github\weapon-randomizer\greatsword.cpp
 	"GreatSword.h"
 
 1701728587 c:\users\kobef\documents\github\weapon-randomizer\greatsword.h
@@ -52,7 +52,7 @@
 1701735073 c:\users\kobef\documents\github\weapon-randomizer\melee.h
 	"Weapon.h"
 
-1701654705 c:\users\kobef\documents\github\weapon-randomizer\weapon.h
+1701738513 c:\users\kobef\documents\github\weapon-randomizer\weapon.h
 	<string>
 	<iostream>
 	<iomanip>
@@ -71,37 +71,38 @@
 1701665436 source:c:\users\kobef\documents\github\weapon-randomizer\statsrandomizer.cpp
 	"RandomStats.h"
 
-1701737651 source:c:\users\kobef\documents\github\weapon-randomizer\swordgeneratordriver.cpp
+1701739721 source:c:\users\kobef\documents\github\weapon-randomizer\swordgeneratordriver.cpp
 	<iostream>
 	<iomanip>
 	"WeaponGenerator.h"
 
-1701664404 source:c:\users\kobef\documents\github\weapon-randomizer\weapon.cpp
+1701739881 source:c:\users\kobef\documents\github\weapon-randomizer\weapon.cpp
 	"Weapon.h"
 
-1701666167 source:c:\users\kobef\documents\github\weapon-randomizer\melee.cpp
+1701739881 source:c:\users\kobef\documents\github\weapon-randomizer\melee.cpp
 	"Melee.h"
 
-1701737933 source:c:\users\kobef\documents\github\weapon-randomizer\randomstats.cpp
+1701739391 source:c:\users\kobef\documents\github\weapon-randomizer\randomstats.cpp
 	"RandomStats.h"
 
-1701737833 c:\users\kobef\documents\github\weapon-randomizer\randomstats.h
+1701739391 c:\users\kobef\documents\github\weapon-randomizer\randomstats.h
 	<string>
 	<iostream>
 	<random>
 	<ctime>
 	"GreatSword.h"
 
-1701737426 c:\users\kobef\documents\github\weapon-randomizer\weapongenerator.h
+1701739579 c:\users\kobef\documents\github\weapon-randomizer\weapongenerator.h
 	"RandomStats.h"
 	"GreatSword.h"
 	"Dagger.h"
 	"Bow.h"
+	"HandCannon.h"
 
-1701737434 source:c:\users\kobef\documents\github\weapon-randomizer\weapongenerator.cpp
+1701739579 source:c:\users\kobef\documents\github\weapon-randomizer\weapongenerator.cpp
 	"WeaponGenerator.h"
 
-1701730046 source:c:\users\kobef\documents\github\weapon-randomizer\dagger.cpp
+1701739881 source:c:\users\kobef\documents\github\weapon-randomizer\dagger.cpp
 	"Dagger.h"
 
 1701736164 c:\users\kobef\documents\github\weapon-randomizer\dagger.h
@@ -110,6 +111,12 @@
 1701736847 source:c:\users\kobef\documents\github\weapon-randomizer\bow.cpp
 	"Bow.h"
 
-1701736326 c:\users\kobef\documents\github\weapon-randomizer\bow.h
+1701738513 c:\users\kobef\documents\github\weapon-randomizer\bow.h
+	"Ranged.h"
+
+1701739030 source:c:\users\kobef\documents\github\weapon-randomizer\handcannon.cpp
+	"HandCannon.h"
+
+1701738513 c:\users\kobef\documents\github\weapon-randomizer\handcannon.h
 	"Ranged.h"
 

@@ -44,3 +44,14 @@ Bow* WeaponGenerator::getRandomBow(string tier) {
     Bow* bowPtr = new Bow(name, damage, tier, maxAmmo, arrowsPerVolley);
     return bowPtr;
 }
+
+// Generate a random HandCannon
+HandCannon* WeaponGenerator::getRandomHandCannon(string tier) {
+    string name = randomStats.getRandomHandCannonName(tier);
+    float damage = randomStats.getRandomDamage(tier);
+    int maxAmmo = randomStats.getRandomMaxAmmo(tier);
+    float caliber = randomStats.getRandomCaliber(tier);
+
+    HandCannon* cannonPtr = new HandCannon(name, damage, tier, maxAmmo, caliber);
+    return cannonPtr;
+}

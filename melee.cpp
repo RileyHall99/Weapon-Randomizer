@@ -34,6 +34,4 @@ string Melee::toString() {
         + "Strike Range : " + strikeRangeRounded + "\n";
 }
 
-Melee::~Melee() {
-    cout << "Melee weapon destroyed" << endl;
-}
+Melee::~Melee() {}

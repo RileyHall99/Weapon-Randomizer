@@ -45,5 +45,5 @@ string Dagger::toString() {
 
 Dagger::~Dagger()
 {
-    cout << "Dagger destroyed" << endl;
+    cout << "Dagger " << this->getName() << " destroyed" << endl;
 }

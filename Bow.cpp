@@ -41,5 +41,5 @@ string Bow::toString() {
 }
 
 Bow::~Bow() {
-    cout << "Bow destroyed" << endl;
+    cout << "Bow " << this->getName() << " destroyed" << endl;
 }

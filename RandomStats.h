@@ -37,6 +37,8 @@ public:
 	string getRandomBowName(string tier);
 	int getRandomArrowsPerVolley(string tier);
 	// HandCannon members
+	string getRandomHandCannonName(string tier);
+	float getRandomCaliber(string tier);
 
 	float roundFloat(float x);
 private:
